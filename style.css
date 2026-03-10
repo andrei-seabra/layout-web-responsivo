@@ -1,6 +1,136 @@
 * {
+    font-family: sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+.menu {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.logo {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu-nav {
+    width: 100vw;
+    display: flex;
+    background-color: #8494FF;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu-item {
+    padding: .75rem;
+}
+
+.menu-item:hover {
+    background-color: #6367FF;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.card {
+    height: 20vh;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #C9BEFF;
+    color: white;
+}
+
+.title {
+    width: 100%;
+    padding: 1rem;
+    background-color: #8494FF;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.description {
+    width: 100%;
+    padding: 1rem;
+}
+
+.copyright {
+    display: flex;
+    margin: 0 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+    font-weight: bold;
+    color: white;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .menu {
+        flex-direction: row;
+        background-color: #6367FF;
+    }
+
+    .menu-nav {
+        background-color: #6367FF;
+        padding: .5rem;
+        margin-right: 1rem;
+    }
+
+    .menu-ul {
+        background-color: #6367FF;
+        gap: 1rem;
+    }
+
+    .menu-item {
+        border-radius: .5rem;
+    }
+
+    .menu-item:hover {
+        background-color: #8494FF;
+    }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+/* Colors */
+.c1 { background-color: #6367FF; }
+.c2 { background-color: #8494FF; }
+.c3 { background-color: #C9BEFF; }
+.c4 { background-color: #FFDBFD; }
